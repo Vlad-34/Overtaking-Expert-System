@@ -21,8 +21,6 @@
     ?f<-(ag_bel (bel_type moment) (bel_pname overtaking-maneuver) (bel_pval allowed))
     (ag_bel (bel_type moment) (bel_pobj ?obj) (bel_pname isa) (bel_pval vehicle))
     (ag_bel (bel_type moment) (bel_pobj ?obj) (bel_pname rel_pos) (bel_pval left_front|front))
-    ; (ag_bel (bel_type moment) (bel_pobj ?obj) (bel_pname blink) (bel_pval left))
-    ; (not (ag_bel (bel_type moment) (bel_pobj ?obj2) (bel_pname isa) (bel_pval road_attribute)))
     (not (ag_bel (bel_type moment) (bel_pobj ?obj2) (bel_pname has_type) (bel_pval free_space)))
 =>
     (retract ?f)
